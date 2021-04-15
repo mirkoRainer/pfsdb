@@ -2,6 +2,8 @@ import express, { Application } from 'express';
 import cors from 'cors';
 import bodyParser = require('body-parser');
 import { Controller } from './main.controller';
+import mongoose from 'mongoose'
+import { MONGO_URL } from './constants/pfsdb.constants';
 
 class App {
   public app: Application;
@@ -10,7 +12,18 @@ class App {
   constructor() {
     this.app = express();
     this.setConfig();
+    this.setMongoConfig()
+
     this.pfsDbController = new Controller(this.app);
+  }
+
+  private setMongoConfig() {
+    mongoose.Promise = global.Promise;
+    mongoose.connect(MONGO_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false
+    }).then(x => console.log(`Connected to mongodb...`));
   }
 
   private setConfig() {

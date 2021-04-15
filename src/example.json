@@ -1,0 +1,119 @@
+{
+	"key": "123456",
+	"pfsData": {
+		"playerNumber": "123",
+		"characterNumber": "456",
+		"levelBump": true,
+		"fame": 3,
+		"currentFaction": "EA",
+		"school": "Hogwarts",
+		"reputation": {
+			"EA": 2,
+			"GA": 1,
+			"HH": 5,
+			"VS": 8,
+			"RO": 9,
+			"VW": 0
+		}
+	},
+	"characterData": {
+		"abilities": {
+			"strength": 16,
+			"dexterity": 16,
+			"constitution": 14,
+			"intelligence": 12,
+			"wisdom": 10,
+			"charisma": 12
+		},
+		"saves": {
+			"fortitude": 2,
+			"reflex": 3,
+			"will": 1
+		},
+		"details": {
+			"keyability": {
+				"value": "str"
+			},
+			"alignment": {
+				"value": "LN"
+			},
+			"class": {
+				"value": "rogue"
+			},
+			"ancestry": {
+				"value": "dwarf"
+			},
+			"heritage": {
+				"value": "stone"
+			},
+			"deity": {
+				"value": "iomadae",
+				"image": ""
+			},
+			"background": {
+				"value": "Orphan"
+			},
+			"age": {
+				"value": "324"
+			},
+			"height": {
+				"value": "45"
+			},
+			"weight": {
+				"value": "232"
+			},
+			"gender": {
+				"value": "male"
+			},
+			"ethnicity": {
+				"value": "dwarf"
+			},
+			"nationality": {
+				"value": "trunau"
+			},
+			"biography": {
+				"value": "bio bio",
+				"public": "public bio"
+			},
+			"xp": {
+				"value": 500,
+				"min": 0,
+				"max": 1000,
+				"pct": 50
+			},
+			"level": {
+				"value": 3,
+				"min": 0
+			}
+		},
+		"speed": {
+			"value": "25",
+			"otherSpeeds": [
+				{
+					"label": "burrow",
+					"value": "50",
+					"type": "speed",
+					"exceptions": ""
+				}
+			],
+			"total": 75
+		},
+		"size": "sml",
+		"traits": {
+			"value": ["dwarf", "humanoid"],
+			"custom": "traits"
+		},
+		"senses": [
+			{
+				"label": "smell",
+				"value": "30",
+				"type": "sense",
+				"exceptions": ""
+			}
+		],
+		"languages": {
+			"value": ["dwarf", "common"],
+			"custom": "languages"
+		}
+	}
+}
