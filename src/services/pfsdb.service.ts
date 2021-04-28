@@ -24,7 +24,7 @@ export class PfsDbService {
       if (error) {
         res.send(error);
       }
-      const message = deleted ? 'Deleted successfully' : 'Pokemon not found :(';
+      const message = deleted ? 'Deleted successfully' : 'Pathfinder on not found :(';
       res.send(message);
     });
   }
