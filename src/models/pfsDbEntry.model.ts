@@ -76,6 +76,10 @@ const PfsDbSchema: Schema = new mongoose.Schema({
         senses: [LabeledValue],
         languages: { value: [String], custom: String, selected: [String] },
     },
+    items: [{
+        sourceId: String,
+        data: String
+    }]
 });
 
 export const PfsDbEntry = mongoose.model<PfsDbEntryType>("PfsDbEntry", PfsDbSchema);

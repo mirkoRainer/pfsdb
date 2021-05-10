@@ -11,10 +11,8 @@ export class Controller {
 
   public routes() {
     this.app.route('/').get(this.PfsDbService.welcomeMessage);
-    this.app.route("/pathfinders").get(this.PfsDbService.getAllPathfinders);
     this.app.route("/pathfinder/:id")
       .delete(this.PfsDbService.deletePfsDbEntry)
-      .put(this.PfsDbService.updateOrNewPfsDbEntry)
       .get(this.PfsDbService.getPfsDbEntry)
       .post(this.PfsDbService.updateOrNewPfsDbEntry);
   }

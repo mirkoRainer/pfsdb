@@ -41,7 +41,9 @@ export class PfsDbService {
           res.send(error);
         }
         if (pfsDbEntry !== null) {
-          console.log(`Updating ${pfsDbId} from DB.`)
+          console.log(`Updating ${pfsDbId} from DB.`);
+          console.log(JSON.stringify(req.body, null, 1));
+          if (error) {console.error(error)};
           res.send("Updated successfully.");
         } else {
           const newPfsDbEntry = new PfsDbEntry(req.body as PfsDbEntryType);
